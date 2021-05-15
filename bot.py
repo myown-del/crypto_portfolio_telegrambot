@@ -21,6 +21,9 @@ kucoin_key = "*****"
 kucoin_sec = "*****"
 kucoin_api_pass = "*****"
 coinmarketcap_apikey = "*****"
+address_cardano = "your_ada_address"
+bnb_address = "your_bnb_address"
+
 
 # in USD
 include_with_value_higher_than = 3
@@ -60,7 +63,6 @@ async def parser(message):
 	# Getting the amount of ADA on Yoroi
 
 	link_cardano = "https://www.cointracker.io/wallet/cardano"
-	address_cardano = "your_ada_address"
 
 	options = Options()
 	options.add_argument('--headless')
@@ -81,7 +83,7 @@ async def parser(message):
 	# Getting the coins from BNB Wallet
 
 	bnb_api_link = "https://dex.binance.org/api/v1/account/"
-	bnb_address = "your_bnb_address"
+
 	response = urlopen(bnb_api_link + bnb_address)
 	data_json = (json.loads(response.read()))['balances']
 	for coin in data_json:
