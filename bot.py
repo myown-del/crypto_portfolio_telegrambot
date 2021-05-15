@@ -157,7 +157,11 @@ async def parser(message):
 	balance = round(balance, 2)
 	reply_msg = "*Total balance is " + str(balance) + " $*" +"\n\n"
 	for coin in total:
-		reply_msg += coin['asset'] + ": " +str(round(coin['amount'],3)) + " | " + str(round(coin['value_in_USD'],2))+" $\n" 
+		if coin['amount'] >= 1:
+			amount = str(round(coin['amount'],2))
+		else:
+			amount = str(round(coin['amount'],6))
+		reply_msg += coin['asset'] + ": " + amount + " | " + str(round(coin['value_in_USD'],2)) +" $\n" 
 	bot.reply_to(message, reply_msg, parse_mode= 'Markdown')
 
 bot.polling(none_stop=True)
