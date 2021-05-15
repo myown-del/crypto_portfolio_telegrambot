@@ -5,4 +5,4 @@ Telegram bot that will combine all your portfolios from Cardano address, BNB add
 
 
 
-You can find dependencies in file requirements.txt
+You can find dependencies in requirements.txt
