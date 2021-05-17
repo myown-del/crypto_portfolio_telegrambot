@@ -1,5 +1,4 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Optionsimport telebot
+import telebot
 import binance
 from kucoin.client import Client
 from bs4 import BeautifulSoup
