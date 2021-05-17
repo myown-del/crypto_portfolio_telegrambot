@@ -1,8 +1,6 @@
 import telebot
 import binance
 from kucoin.client import Client
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
 import time
 import asyncio
