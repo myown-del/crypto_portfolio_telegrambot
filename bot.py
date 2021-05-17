@@ -8,16 +8,6 @@ from urllib.request import urlopen
 import json
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
-from operator import itemgetterimport telebot
-import binance
-from kucoin.client import Client
-from bs4 import BeautifulSoup
-import time
-import asyncio
-from urllib.request import urlopen
-import json
-from requests import Request, Session
-from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 from operator import itemgetter
 
 # initial config
