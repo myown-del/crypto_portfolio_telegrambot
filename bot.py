@@ -8,6 +8,16 @@ from urllib.request import urlopen
 import json
 from requests import Request, Session
 from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
+from operator import itemgetterimport telebot
+import binance
+from kucoin.client import Client
+from bs4 import BeautifulSoup
+import time
+import asyncio
+from urllib.request import urlopen
+import json
+from requests import Request, Session
+from requests.exceptions import ConnectionError, Timeout, TooManyRedirects
 from operator import itemgetter
 
 # initial config
@@ -165,4 +175,4 @@ async def parser(message):
 		reply_msg += coin['asset'] + ": " + amount + " | " + str(round(coin['value_in_USD'],2)) +" $\n" 
 	bot.reply_to(message, reply_msg, parse_mode= 'Markdown')
 
-bot.polling(none_stop=True)import telebot
+bot.polling(none_stop=True)
