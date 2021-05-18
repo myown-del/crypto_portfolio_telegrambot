@@ -59,7 +59,7 @@ async def parser(message):
 				total.append(coin)
 	await client.close()
 
-	# Getting the amount of ADA on Yoroi
+	# Getting the amount of ADA from Cardano Wallet
 
 	link_cardano = "https://cardano-mainnet.blockfrost.io/api/v0/addresses/"
 
