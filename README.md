@@ -8,6 +8,6 @@ It needs your API keys from these services to work:
 *  [Coinmarketcap.com](https://coinmarketcap.com/api/)
 
 ## How to use
-Use command `/check` to check your portfolio.
+Use command `/start` to enter the main menu.
 ## Requirements
 You can find dependencies in [requirements.txt](https://github.com/myown-del/crypto_portfolio_telegrambot/blob/main/requirements.txt)
