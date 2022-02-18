@@ -1,5 +1,7 @@
 # Crypto portfolio | Telegram Bot
 Telegram bot that will combine all your portfolios from Cardano address, BNB address, Kucoin, Binance.
+## Preview
+![alt text](https://i.imgur.com/ha9hzuW.png)
 ## API keys needed
 It needs your API keys from these services to work:
 *  [Binance](https://www.binance.com/ru/my/settings/api-management)
